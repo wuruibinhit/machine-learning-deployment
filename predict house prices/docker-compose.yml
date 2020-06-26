@@ -1,4 +1,4 @@
-version: "1"
+version: "3.6"
 
 services:
   flask:
@@ -6,4 +6,4 @@ services:
     volumes : 
      - ../scripts:/scripts
     ports:
-     - 8080:8080
+     - 8080:5000

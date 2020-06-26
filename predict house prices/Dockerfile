@@ -12,4 +12,8 @@ RUN python3 -m pip install --upgrade pip
 ADD ./python_requirements.txt /
 RUN python3 -m pip install -r python_requirements.txt
 
-ENTRYPOINT ["bash","/scripts/start_flask.sh"]
+ADD ./prediction.py /
+ADD ./server.py /
+ADD ./kc_house_data.csv /
+
+CMD [ "python3", "-u", "./server.py" ]
