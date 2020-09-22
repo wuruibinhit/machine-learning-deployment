@@ -56,14 +56,14 @@ Output:
 
 ## Citing
 
+If you find this code useful in your research, please consider citing the blog:
+
 ```
-@misc{Abhinav:2019,
+@misc{sagardeploy,
   Author = {Abhinav Sagar},
-  Title = {Machine-Learning-Deployment-Tutorials},
+  Title = {How to Easily Deploy Machine Learning Models Using Flask},
   Year = {2019},
-  Publisher = {GitHub},
-  Journal = {GitHub repository},
-  Howpublished = {\url{https://github.com/abhinavsagar/Machine-Learning-Deployment-Tutorials}}
+  Journal = {Towards Data Science},
 }
 ```
 
