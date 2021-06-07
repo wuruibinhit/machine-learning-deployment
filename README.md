@@ -1,6 +1,19 @@
 # Machine Learning Deployment Tutorials
 Launch machine learning models into production using flask, docker etc.
 
+## Citing
+
+If you find this code useful in your research, please consider citing the blog:
+
+```
+@misc{sagardeploy,
+  Author = {Abhinav Sagar},
+  Title = {How to Easily Deploy Machine Learning Models Using Flask},
+  Year = {2019},
+  Journal = {Towards Data Science},
+}
+```
+
 # 1. Predict Sales
 
 Check out the corresponding medium blog post [https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4](https://towardsdatascience.com/how-to-easily-deploy-machine-learning-models-using-flask-b95af8fe34d4).
@@ -51,19 +64,6 @@ Output:
 ```json
 {
   "predict cost": 1022545.34768284
-}
-```
-
-## Citing
-
-If you find this code useful in your research, please consider citing the blog:
-
-```
-@misc{sagardeploy,
-  Author = {Abhinav Sagar},
-  Title = {How to Easily Deploy Machine Learning Models Using Flask},
-  Year = {2019},
-  Journal = {Towards Data Science},
 }
 ```
 
