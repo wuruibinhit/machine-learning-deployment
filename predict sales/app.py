@@ -1,5 +1,5 @@
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 import pickle
 
 app = Flask(__name__)
@@ -8,6 +8,13 @@ model = pickle.load(open('model.pkl', 'rb'))
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/hello')
+def test():
+    return redirect(url_for('test2'))
+@app.route(('/test2'))
+def test2():
+    return render_template('./html/index2.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():

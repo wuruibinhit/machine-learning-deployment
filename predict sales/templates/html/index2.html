@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Deployment Tutorial 1</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<SCRIPT language=JavaScript> function password() { 
+  var testV = 1; var pass1 = prompt('请输入密码:',''); 
+  while (testV < 3) { if (!pass1) history.go(-1); 
+    if (pass1 == "aucopo") { alert('密码正确!'); break; } testV+=-1; 
+    var pass1 = prompt('密码错误!请重新输入:'); } 
+if (pass1!="password" & testV ==3) history.go(-1); return " "; } document.write(password());
+</SCRIPT>
+ 
+</head>
+
+<body style="background: rgb(69, 94, 163);">
+ <div class="login">
+	<h1>Sales Forecasting</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="rate" placeholder="rate" required="required" />
+        <input type="text" name="sales in first month" placeholder="sales in first month" required="required" />
+		<input type="text" name="sales in second month" placeholder="sales in second month" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict sales in third month</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+<div>
+    <a href="/static/数据挖掘和机器学习在电池制造领域的应用.html" name="hello">hello</a>
+</div>
+<div>
+  <img src='/static/EDA.png'>
+</div>
+</body>
+</html>
